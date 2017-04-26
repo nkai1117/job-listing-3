@@ -20,15 +20,15 @@
 
 //---login/logout
 .navbar-default {
-     background-color: #212121;  //背景颜色
+     background-color: black;  //背景颜色
 
-     border-color: #212121; //边框色
+     border-color: black; //边框色
 
-     margin-bottom: 0; //底部 margin 不撑开距离
+     //margin-bottom: 0; //底部 margin 不撑开距离
  }
 
  .navbar-default .navbar-brand {
-   color: #EF6C00; //字体颜色
+   color: #BDBDBD; //字体颜色
 
    padding: 10px 15px; //上下10px，左右15px
    line-height: 30px; //文字行高
@@ -36,38 +36,45 @@
 
  .navbar-default .navbar-brand:hover,
  .navbar-default .navbar-brand:focus {
-   color: #FF6F00; //鼠标放置在链接上的文字颜色
+   color: white; //鼠标放置在链接上的文字颜色
 
    background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
  }
 
  .navbar-default .navbar-nav > li > a{
-   color: #EF6C00;
+   color: #BDBDBD;
 
  }
 
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
-   color: #FF6F00;
+   color: white;
 
    background-color: transparent;
  }
  .navbar-default .navbar-nav > .active > a,
  .navbar-default .navbar-nav > .active > a:hover,
  .navbar-default .navbar-nav > .active > a:focus {
-   color: #FF6F00;
+   color: #BDBDBD;
 
-   background-color: #FFE0B2;
+   background-color: transparent;
 
  }
 
  .navbar-default .navbar-nav > .open > a,
  .navbar-default .navbar-nav > .open > a:focus,
  .navbar-default .navbar-nav > .open > a:hover {
-   background-color: #FFE0B2;
+   background-color: transparent;
 
-   color: #212121;
+   color: white;
 
+ }
+
+ .navbar-brand > img {
+     display: inline-block; //图片和链接文字显示在同一行
+     margin-right: 10px; //图片和链接文字拉开一点距离
+     width: 32px; //定制图片宽度
+     height: 32px; //定制图片高度
  }
 
  @media (min-width: 768px) {
@@ -76,30 +83,29 @@
    }
  }
 
- //---------Content---------
-
- .content-section-a {
-     padding: 50px 0;
-     background-color: #f8f8f8;
+ #search-id {
+ width: 200px;
+ padding-top: 7px;
  }
 
- .content-section-b {
-     padding: 50px 0;
-     border-top: 1px solid #e7e7e7;
-     border-bottom: 1px solid #e7e7e7;
+ //---guanyuwomen---
+ .caption {
+   margin: 30px;
+   text-align: center;
+   top: 20px;
+
  }
 
- .section-heading-spacer {
-     float: left;
-     width: 200px;
-     border-top: 3px solid #e7e7e7;
+ .thumbnail {
+     border: 0 none;
+     box-shadow: none;
+     margin-top: 60px;
  }
+ 
 
- .section-heading {
-     margin-bottom: 30px;
- }
 
- .lead {
-     font-size: 18px;
-     font-weight: 400;
- }
+//-----common----
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}

@@ -5,9 +5,10 @@
 
 .bs-slider{
     overflow: hidden;
-    max-height: 700px;
+    max-height: 800px;
     position: relative;
     background: #000000;
+    margin-top: -20px
 }
 .bs-slider:hover {
     cursor: -moz-grab;

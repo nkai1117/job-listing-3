@@ -34,10 +34,10 @@
                        <div class="row">
                            <!-- Slide Text Layer -->
                            <div class="slide-text slide_style_left">
-                               <h1 data-animation="animated zoomInRight">Bootstrap Carousel</h1>
-                               <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                               <h1 data-animation="animated zoomInRight">如果你是千里马</h1>
+                               <p data-animation="animated fadeInLeft">我们这里有伯乐</p>
                                <a href="http://localhost:3000/jobs/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">应聘工作</a>
-                               <a href="http://localhost:3000/jobs/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
+                               <a href="http://localhost:3000/users/sign_in" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
                            </div>
                        </div>
                    </div>
@@ -52,10 +52,10 @@
                    <div class="bs-slider-overlay"></div>
                    <!-- Slide Text Layer -->
                    <div class="slide-text slide_style_center">
-                       <h1 data-animation="animated flipInX">Bootstrap touch slider</h1>
-                       <p data-animation="animated lightSpeedIn">Make Bootstrap Better together.</p>
+                       <h1 data-animation="animated flipInX">你想把你的技能变现</h1>
+                       <p data-animation="animated lightSpeedIn">那么这里可以帮你</p>
                        <a href="http://localhost:3000/jobs/" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">应聘工作</a>
-                       <a href="http://localhost:3000/jobs/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">发布工作</a>
+                       <a href="http://localhost:3000/users/sign_in" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">发布工作</a>
                    </div>
                </div>
                <!-- End of Slide -->
@@ -68,10 +68,10 @@
                    <div class="bs-slider-overlay"></div>
                    <!-- Slide Text Layer -->
                    <div class="slide-text slide_style_right">
-                       <h1 data-animation="animated zoomInLeft">Beautiful Animations</h1>
-                       <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+                       <h1 data-animation="animated zoomInLeft">想转换行业</h1>
+                       <p data-animation="animated fadeInRight">这里是各行各种的精英的聚集地,给你最专业的咨询</p>
                        <a href="http://localhost:3000/jobs/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">应聘工作</a>
-                       <a href="http://localhost:3000/jobs/" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
+                       <a href="http://localhost:3000/users/sign_in/" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
                    </div>
                </div>
                <!-- End of Slide -->
@@ -94,52 +94,57 @@
        </div> <!-- End  bootstrap-touch-slider Slider -->
 
 
+         <h2>优秀企业</h2>
+        <hr>
+        <div class="row">
+         <div class="col-sm-4"><img class="img-circle img-responsive img-center" <%= image_tag("pic-1.png")%>
+          <h2 class="text-center">腾讯集团</h2>
+          <p>深圳市腾讯计算机系统有限公司成立于1998年11月，2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号00700），是香港恒生指数成分股之一，董事会主席兼首席执行官是马化腾。</p>
+            </div>
+              <div class="col-sm-4"><img class="img-circle img-responsive img-center" <%= image_tag("pic-2.png")%>
+                <h2 class="text-center">阿里巴巴</h2>
+               <p>2014年9月19日，阿里巴巴集团在纽约证券交易所正式挂牌上市，股票代码“BABA”，创始人和董事局主席为马云。2015年全年，阿里巴巴总营收943.84亿元人民币，净利润688.44亿元人民币。</p>
+             </div>
+            <div class="col-sm-4">
+            <!-- <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt=""> -->
+               <img class="img-circle img-responsive img-center" <%= image_tag("pic-3.png")%>
+              <h2 class="text-center">百度集团</h2>
+               <p>百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。1999年底,身在美国硅谷的李彦宏看到了中国互联网及中文搜索引擎服务的巨大发展潜力，抱着技术改变世界的梦想，他毅然辞掉硅谷的高薪工作，携搜索引擎专利技术，于 2000年1月1日在中关村创建了百度公司。</p>
+           </div>
+        </div>
+        <!-- /.row -->
 
-
-       <div class="content-section-a">
-  <div class="container">
+    <hr>
+  <h2>联系我们</h2>
+   <hr>
+        <section id="company">
+  <div class = "container-fluid">
     <div class="row">
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        <h2 class="section-heading"></h2>
-        <p class="lead"></p>
+      <div class="col-sm-4 ">
+        <div class="thumbnail">
+          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
+          <div class="caption">
+            <h3>深圳科技园</h3>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
+      <div class="col-sm-4 ">
+        <div class="thumbnail">
+          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
+          <div class="caption">
+            <h3>bole@offer.com</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 ">
+        <div class="thumbnail">
+          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
+          <div class="caption">
+            <h3>010-12345678</h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="content-section-b">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        <h2 class="section-heading"></h2>
-        <p class="lead"> <a target="_blank" href="http://localhost:3000/jobs"></a> </p>
-      </div>
-      <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-        <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="content-section-a">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        <h2 class="section-heading"><br></h2>
-        <p class="lead"><a target="_blank" href="http://localhost:3000/jobs/"></a></p>
-      </div>
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
+<hr>
