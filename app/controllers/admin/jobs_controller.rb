@@ -1,5 +1,5 @@
 class Admin::JobsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  before_action :authenticate_user!
   before_action :require_is_admin
   layout "admin"
   def publish
@@ -22,7 +22,7 @@ class Admin::JobsController < ApplicationController
   end
 
   def index
-    @jobs = Job.all
+    @jobs = Job.all.paginate(:page => params[:page], :per_page => 5 )
   end
 
   def new

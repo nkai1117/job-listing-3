@@ -1,6 +1,9 @@
+
 <!-- Add this css File in head tag-->
+
        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
 
 
 <!--
@@ -27,7 +30,7 @@
                <div class="item active">
 
                    <!-- Slide Background -->
-                   <img src="https://static.pexels.com/photos/6224/hands-people-woman-working.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                   <img src="http://ww2.sinaimg.cn/large/006tNc79gy1ff0d8q4y3uj31kw0qmkjo.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
                    <div class="bs-slider-overlay"></div>
 
                    <div class="container">
@@ -36,8 +39,8 @@
                            <div class="slide-text slide_style_left">
                                <h1 data-animation="animated zoomInRight">如果你是千里马</h1>
                                <p data-animation="animated fadeInLeft">我们这里有伯乐</p>
-                               <a href="http://localhost:3000/jobs/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">应聘工作</a>
-                               <a href="http://localhost:3000/users/sign_in" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
+                               <a href="/jobs" class="btn btn-default" data-animation="animated fadeInLeft">应聘工作</a>
+                               <a href="/admin/jobs"class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
                            </div>
                        </div>
                    </div>
@@ -48,14 +51,14 @@
                <div class="item">
 
                    <!-- Slide Background -->
-                   <img src="https://picjumbo.imgix.net/HNCK7437.jpg?q=40&w=1650&sharp=30" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                   <img src="http://ww3.sinaimg.cn/large/006tNc79gy1ff0d96f60nj31kw0qmhdy.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
                    <div class="bs-slider-overlay"></div>
                    <!-- Slide Text Layer -->
                    <div class="slide-text slide_style_center">
                        <h1 data-animation="animated flipInX">你想把你的技能变现</h1>
                        <p data-animation="animated lightSpeedIn">那么这里可以帮你</p>
-                       <a href="http://localhost:3000/jobs/" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">应聘工作</a>
-                       <a href="http://localhost:3000/users/sign_in" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">发布工作</a>
+                       <a href="/jobs"  class="btn btn-default" data-animation="animated fadeInUp">应聘工作</a>
+                       <a href="/admin/jobs" class="btn btn-primary" data-animation="animated fadeInDown">发布工作</a>
                    </div>
                </div>
                <!-- End of Slide -->
@@ -64,14 +67,14 @@
                <div class="item">
 
                    <!-- Slide Background -->
-                   <img src="https://static.pexels.com/photos/30342/pexels-photo-30342.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                   <img src="http://ww3.sinaimg.cn/large/006tNc79gy1ff0da3k2uyj31kw0qmqv5.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
                    <div class="bs-slider-overlay"></div>
                    <!-- Slide Text Layer -->
                    <div class="slide-text slide_style_right">
                        <h1 data-animation="animated zoomInLeft">想转换行业</h1>
                        <p data-animation="animated fadeInRight">这里是各行各种的精英的聚集地,给你最专业的咨询</p>
-                       <a href="http://localhost:3000/jobs/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">应聘工作</a>
-                       <a href="http://localhost:3000/users/sign_in/" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
+                       <a href="/jobs" class="btn btn-default" data-animation="animated fadeInLeft">应聘工作</a>
+                       <a href="/admin/jobs" class="btn btn-primary" data-animation="animated fadeInRight">发布工作</a>
                    </div>
                </div>
                <!-- End of Slide -->
@@ -94,7 +97,8 @@
        </div> <!-- End  bootstrap-touch-slider Slider -->
 
 
-         <h2>优秀企业</h2>
+
+         <h2 class="section-title text-center">优秀企业</h2>
         <hr>
         <div class="row">
          <div class="col-sm-4"><img class="img-circle img-responsive img-center" <%= image_tag("pic-1.png")%>
@@ -115,36 +119,93 @@
         <!-- /.row -->
 
     <hr>
-  <h2>联系我们</h2>
-   <hr>
-        <section id="company">
-  <div class = "container-fluid">
-    <div class="row">
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-          <div class="caption">
-            <h3>深圳科技园</h3>
+
+<!--火热职位-->
+<div id="hotjobs">
+    <section class="container-fluid hot-jobs-category">
+      <h2 class="section-title text-center">热门职业</h2>
+        <div class="short-line"></div>
+          <div class="row text center hjc-ul">
+            <div class="col-md-3 col-sm-4">
+              <div class="thumbnail">
+                <a href="/jobs/search?utf8=✓&amp;q=全栈工程师">
+                  <div class="hjc-img-wrap">
+                  <img class="project-img img-responsive" src="http://ww3.sinaimg.cn/large/006tKfTcgy1ff4h5brbncj30el09qdgr.jpg" alt="">
+                </div>
+              <div class="title">全栈工程师</div>
+            </a>
+          </div>
+        </div>
+      <div class="col-md-3 col-sm-4">
+            <div class="thumbnail">
+            <a href="/jobs/search?utf8=✓&amp;q=婚礼摄影师">
+              <div class="hjc-img-wrap">
+                <img class="project-img img-responsive" src="http://ww3.sinaimg.cn/large/006tKfTcgy1ff4h7g6sa7j31kw126u10.jpg" alt="">
+              </div>
+              <div class="title">婚礼摄影师</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="thumbnail">
+            <a href="/jobs/search?utf8=✓&amp;q=设计师">
+              <div class="hjc-img-wrap">
+                <img class="project-img img-responsive" src="http://ww3.sinaimg.cn/large/006tNbRwgy1ff4j4guni1j30ec09qdft.jpg" alt="">
+              </div>
+              <div class="title">设计师</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="thumbnail">
+            <a href="/jobs/search?utf8=✓&amp;q=人工智能">
+              <div class="hjc-img-wrap">
+                <img class="project-img img-responsive" src="http://ww1.sinaimg.cn/large/006tNbRwgy1ff4ir1lgzzj30qe0eutci.jpg" alt="">
+              </div>
+              <div class="title">人工智能</div>
+            </a>
+          </div>
+        </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="thumbnail">
+                <a href="/jobs/search?utf8=✓&amp;q=旅游达人">
+                  <div class="hjc-img-wrap">
+                  <img class="project-img img-responsive" src="http://ww2.sinaimg.cn/large/006tKfTcgy1ff4h3lvs4wj30ew09qt9e.jpg" alt="">
+                </div>
+              <div class="title">旅游达人</div>
+            </a>
+          </div>
+        </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="thumbnail">
+              <a href="/jobs/search?utf8=✓&amp;q=营养搭配师">
+                  <div class="hjc-img-wrap">
+                  <img class="project-img img-responsive" src="http://ww3.sinaimg.cn/large/006tNbRwgy1ff4iapjncwj30ey09qq3t.jpg" alt="">
+                </div>
+              <div class="title">营养搭配师</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="thumbnail">
+            <a href="/jobs/search?utf8=✓&amp;q=NASA计划">
+                <div class="hjc-img-wrap">
+                <img class="project-img img-responsive" src="http://ww2.sinaimg.cn/large/006tNbRwgy1ff4hw3cvyaj31kw1kw1ky.jpg" alt="">
+              </div>
+              <div class="title">NASA计划</div>
+            </a>
+          </div>
+        </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="thumbnail">
+            <a href="/jobs" class="more">
+              <div class="hjc-img-wrap">
+                <img class="project-img img-responsive" src="http://ww1.sinaimg.cn/large/006tNbRwgy1ff4hy8k7u3j31kw11x4qq.jpg" alt="">
+              </div>
+              <div class="title">查看更多职位</div>
+            </a>
           </div>
         </div>
       </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-          <div class="caption">
-            <h3>bole@offer.com</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-          <div class="caption">
-            <h3>010-12345678</h3>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
-<hr>
