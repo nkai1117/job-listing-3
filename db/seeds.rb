@@ -9,7 +9,7 @@
 puts 'Hello World!'
 puts '這個種子檔會自動建立一個帳號, 並且随机創建 10 個jobs，10个隐藏的jobs'
 
-create_account = User.create([email: '469851461@qq.com', password: 'nk123456', password_confirmation: '111111', is_admin: 'true'])
+create_account = User.create([email: '469851461@qq.com', password: 'nk123456', password_confirmation: 'nk123456', is_admin: 'true'])
 puts 'Admin account is created successfully!'
 
 job_info = [
