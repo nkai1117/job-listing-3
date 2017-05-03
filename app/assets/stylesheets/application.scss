@@ -108,12 +108,12 @@
 
 
 
-// //-----common----
-// .col-centered{
-//   float: none;
-//   margin: 0 auto;
-//
-// }
+//-----common----
+.col-centered{
+  float: none;
+  margin: 0 auto;
+
+}
 
 //--hot jobs--
 .hot-jobs-category {
@@ -184,3 +184,26 @@
     font-weight: 700;
     position: left;
 }
+//----footer---
+html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
+ .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    background-color: black;
+
+    p {
+       color: white;
+      margin-top: 30px;
+    }
+   }
